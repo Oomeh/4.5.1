@@ -38,11 +38,15 @@ int main() {
         }
         else
         {
+            //Sets it to 0
             current = 0;
         }
+        //If both are 1, decides the character needs to be erased
         if(current == 1 && last == 1)
         {
+            //Erases the space
         sentence.erase(i, 1);
+        //Pushes the counter back by 1 as the size of the string array doesn't actually get smaller even though the space is gone
         i--;
         }
 
